@@ -1,0 +1,61 @@
+* {
+    --element-width: 60px;
+    --element-height: var(--element-width)
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: var(--element-width);
+    height: var(--element-height);
+}
+
+#player {
+    width: var(--element-width);
+    height: var(--element-height);
+    position: absolute;
+    text-align: center;
+    background-image: url('./blue.png');
+    background-image: contain;
+    background-position: center;
+}
+
+.wall {
+    background-color: black;
+}
+
+.empty {
+    background-color: white;
+}
+
+.start {
+    background-color: green;
+}
+
+.finish {
+    background-color: blue;
+}
+
+.box {
+    background-color: red;
+}
+
+.storage {
+    background-color: aquamarine;
+    border-radius: 100px;
+}
+
+.storage-full {
+    background-color: lightgreen;
+}
+
+.win {
+    position: absolute;
+    font-size: 45px;
+    left: 50%;
+    top: 30%;
+    background-color: aquamarine;
+}
